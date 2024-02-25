@@ -1,6 +1,6 @@
-<nav class="h-5 relative p-4 sm:p-10">
-    <ul class="list-none flex flex-wrap items-center justify-center gap-x-4">
-        <div class="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+<nav class="h-5 p-4 sm:p-10">
+    <ul class="list-none flex flex-wrap justify-center gap-x-4">
+        <div class="text-center">
             <li>
                 <a href="/blog" class="px-3">Blog</a>
             </li>
