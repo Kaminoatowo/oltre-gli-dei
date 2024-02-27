@@ -1,4 +1,9 @@
-<nav class="h-5 p-4 sm:p-10">
+<script>
+    let customClass = "";
+    export { customClass as class };
+</script>
+
+<nav class="h-5 p-4 sm:p-10 {customClass}">
     <ul class="list-none flex flex-wrap justify-center gap-x-4">
         <div class="text-center">
             <li>
