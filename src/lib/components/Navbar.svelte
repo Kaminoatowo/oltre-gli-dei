@@ -10,6 +10,9 @@
             <li>
                 <a href="/about" class="px-3">About</a>
             </li>
+            <li>
+                <a href="/contacts" class="px-3">Contacts</a>
+            </li>
         </div>
         
     </ul>
