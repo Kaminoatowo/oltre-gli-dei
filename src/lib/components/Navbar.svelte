@@ -1,34 +1,29 @@
-<nav class="h-5 relative p-4 sm:p-10">
-    <ul class="list-none flex flex-wrap items-center justify-center gap-x-4">
-        <div class="text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <li>
-                <a href="/blog" class="px-3">Blog</a>
-            </li>
-            <li>
-                <a href="/tarots" class="px-3">Tarocchi</a>
-            </li>
-            <li>
-                <a href="/about" class="px-3">About</a>
-            </li>
-        </div>
-        
-    </ul>
-</nav>
+<script>
+    import NavbarLinks from "./NavbarLinks.svelte";
+    import OgdIcon from "./OGDIcon.svelte";
+    /*import { onMount } from "svelte";
 
-<style lang="postcss">
+    let topPosition = 0;
 
-    li {
-        float: left;
+    function getParentTopPosition() {
+        const parentDiv = document.querySelector(".link");
+        const { top } = parentDiv.getBoundingClientRect();
+        topPosition = top;
     }
 
-    a {
-		text-decoration: none;
-		color: inherit;
-        display: block;
-        text-align: center;
-	}
+    onMount(getParentTopPosition);
+    {#if topPosition == 0}
+        <a href="/" class="link mt-auto sm:p-10">
+            <OgdIcon size="160"/>
+        </a>
+    {/if}*/
+</script>
 
-    a:hover {
-        background-color: bg-tertiary;
-    }
-</style>
+<div class="wrapper text-secondary font-bold truncate sticky top-0 flex justify-between">
+    <a href="/" class="hidden mt-auto sm:p-10">
+        <OgdIcon size="160"/>
+    </a>
+    <NavbarLinks class="mx-auto mt-2" />
+</div>
+
+<hr class="border-1 border-white w-full mx-auto">
